@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management Information System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Student Course Application</h1>
+    <p>Welcome to our institute application site.</p>  
+    <div class="image-container">
+        <img src="institute-for-advanced-study-office.jpg" alt="offices" loading="lazy" width="250" height="200">
+        <p>Institute offices</p>
+    </div>
+    <div class="image-container">
+        <img src="IAS-4.jpg" alt="Students collaborating" loading="lazy" width="250" height="200">
+        <p>Student engaging with one another</p>
+    </div>
+    <div class="image-container">
+        <img src="Still_05.jpg" alt="Student halls" loading="lazy" width="250" height="200">
+        <p>Student Halls</p>
+    </div>
+    <div class="image-container">
+        <img src="GBa7h6PXYAAmddp.jpg" alt="Lectures" loading="lazy" width="250" height="200">
+        <p>How lecture halls looks</p>
+    </div>
+    <div class="image-container">
+        <img src="download (1).jpg" alt="Famous faces associated with the IAS" loading="lazy" width="250" height="200">
+        <p>Reowned people</p>
+    </div>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Fill in your name" required>
+    
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+    
+        <label>Gender:</label>
+        <div class="gender-label">
+            <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label><br>
+        </div>
+    
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+    
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" required>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option value="Accounting">Accounting</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Theoretical Physics">Theoretical Physics</option>
+            <option value="Economics">Economics</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Applied Mathematics">Applied Mathematics</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Finance">Finance</option>
+        </select>
+    
+        <input type="submit" value="Register">
+        <input type="button" value="Cancel" onclick="window.location.href='index.html'">
+    </form>
+    <p><a href="https://www.ias.edu/">About Us</a></p>
+</body>
+</html>
